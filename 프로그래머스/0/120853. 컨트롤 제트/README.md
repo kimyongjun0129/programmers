@@ -1,10 +1,10 @@
 # [level 0] 컨트롤 제트 - 120853 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120853?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120853) 
 
 ### 성능 요약
 
-메모리: 103 MB, 시간: 0.95 ms
+메모리: 73.9 MB, 시간: 0.46 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 04월 03일 10:53:44
+2025년 04월 03일 10:54:36
 
 ### 문제 설명
 
