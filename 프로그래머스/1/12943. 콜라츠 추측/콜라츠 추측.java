@@ -1,5 +1,5 @@
 class Solution {
-    public int solution(double num) {
+    public int solution(long num) {
         int cnt = 0;
         
         while (num != 1) {
