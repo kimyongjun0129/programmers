@@ -1,14 +1,23 @@
 import java.util.*;
 
 class Solution {
-    public List<Integer> solution(int[] arr, int divisor) {
-        List<Integer> result = new ArrayList<>();
+    public int[] solution(int[] arr, int divisor) {
+        Arrays.sort(arr);
+        int len = 0;
+        int cnt = 0;
         
-        for (int num : arr) {
-            if(num%divisor==0) result.add(num);
+        for(int num : arr) {
+            if(num%divisor==0) len++;
         }
-        Collections.sort(result);
-        if(result.isEmpty()) result.add(-1);
+        
+        if (len==0) len++;
+        
+        int[] result = new int[len];
+        
+        for(int num : arr) {
+            if(num%divisor==0) result[cnt++]=num;
+        }
+        if (result[0] == 0) result[0] = -1;
         return result;
     }
 }
