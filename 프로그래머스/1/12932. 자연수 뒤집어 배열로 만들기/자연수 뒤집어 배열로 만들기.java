@@ -1,18 +1,17 @@
 import java.util.*;
 
 class Solution {
-    public List<Long> solution(long n) {
-        // 1. 일의자리부터 끝까지 역순으로 계산하여 배열에 저장
-        List<Long> result = new ArrayList<>();
-        long temp=0;
-        while(true) {
-            temp=(n%10);
-            
-            if(n==0) break;
-            
-            n/=10;
-            
-            result.add(temp);
+    public int[] solution(long n) {
+        List<Integer> list = new ArrayList<>();
+        
+            while (n > 0) {
+                list.add((int)(n % 10));
+                n /= 10;
+            }
+        
+        int[] result = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            result[i] = list.get(i);
         }
         
         return result;
