@@ -1,7 +1,7 @@
 class Solution {
     public boolean solution(int x) {
         int sum = 0;
-        int num = x;
+        int original = x;
         
         while(true) {
             sum+=x%10;
@@ -11,6 +11,6 @@ class Solution {
             x/=10;
         }
         
-        return num%sum == 0 ? true : false;
+        return original%sum == 0 ? true : false;
     }
 }
