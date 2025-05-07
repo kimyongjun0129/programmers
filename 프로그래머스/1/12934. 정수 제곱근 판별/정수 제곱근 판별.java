@@ -1,9 +1,13 @@
 class Solution {
-    public long solution(long n) {
-        if (Math.sqrt(n) % 1 == 0) {
-            long num = (long)Math.sqrt(n);
-            return (num+1)*(num+1);
-        }
-        else return -1;
-    }
+  public long solution(long n) {
+      if(n==1){
+          return 4;
+      }
+      for(long i=2;i<n;i++){
+          if(n/i == i && n%i ==0){
+              return (i+1)*(i+1);
+          }
+      }
+      return -1;
+  }
 }
