@@ -12,7 +12,7 @@ class Solution {
         }
         
         if (len==0) len++;
-        
+    
         int[] result = new int[len];
         
         // 나누어 떨어지는 수 배열 만들기
