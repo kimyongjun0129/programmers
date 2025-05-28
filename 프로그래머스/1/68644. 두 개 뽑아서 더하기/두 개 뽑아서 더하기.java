@@ -11,6 +11,7 @@ class Solution {
             }
         }
 
+        // set -> int[]로 변환
         int[] answer = new int[result.size()];
         int index = 0;
         for(int num : result) {
