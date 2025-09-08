@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Solution {
     public String[] solution(String[] strArr) {
         int index = 0;
@@ -20,3 +18,4 @@ class Solution {
         return answer;
     }
 }
+
