@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public int solution(String[] strArr) {
         
-        Map<Integer, Integer> map = new TreeMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         
         for (String str: strArr) {
             if (map.get(str.length()) != null) {
@@ -15,11 +15,9 @@ class Solution {
             }
         }
         
-        int key = 0;
         int value = 0;
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             if(value < entry.getValue()) {
-                key = entry.getKey();
                 value = entry.getValue();
             }
         }
