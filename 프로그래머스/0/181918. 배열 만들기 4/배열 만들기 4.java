@@ -2,18 +2,15 @@ import java.util.*;
 
 class Solution {
     public int[] solution(int[] arr) {
-        List<Integer> stk = new ArrayList<>();
+        Stack<Integer> stk = new Stack<>();
         int i = 0;
         
         while (arr.length > i) {
-            if (stk.size() == 0) {
-                stk.add(arr[i]);
+            if (stk.size() != 0 && stk.get(stk.size() - 1) >= arr[i]) {
+                stk.pop();
+            } else {
+                stk.push(arr[i]);
                 i++;
-            } else if (stk.size() != 0 && stk.get(stk.size() - 1) < arr[i]) {
-                stk.add(arr[i]);
-                i++;
-            } else if (stk.size() != 0 && stk.get(stk.size() - 1) >= arr[i]) {
-                stk.remove(stk.size() - 1);
             }
         }
         
